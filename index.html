@@ -1,62 +1,201 @@
-<!DOCTYPE html>
+<!-- index.html criado por mim seguindo o desafio -->
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <meta charset="UTF-8" />
+    <title>Catálogo de Tags</title>
+    <style>
+        /* Importei uma fonte do Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    
+        /* Estilos do catálogo */
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            padding: 20px; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background-color: #ac243a;
+        }
+        fieldset { 
+            border: 2px solid #f0e0d2; 
+            padding: 20px; 
+            width: 85%; 
+            max-width: 600px; 
+            border-radius: 8px;
+            background-color: #f0e0d2;
+            margin: 40px auto;  
+            background-image: url('lain.gif'); 
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+        legend { 
+            font-weight: bold; 
+            color: #784040;
+            padding: 2px;
+            position: relative;
+            top: 20px; 
+        }
+        #catalog a { 
+            color: #784040; 
+            text-decoration: none;
+        }
+        #catalog {
+            list-style: none;          
+            padding-left: 0;           
+            list-style: url("lain.png") inside;
+        }
+        .tag-group { 
+            margin-top: 30px; 
+        }
+        h1 {
+            text-align: center;
+            color: #f0e0d2;
+        }
+        h2 { 
+            margin-top: 20px; 
+            color: #784040;
+        }
+    </style>
+    
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+    <!-- Iniciando meu desafio de HTML -->
+    <h1>Catálogo de Tags</h1>
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+    <!-- Campo agrupando o índice -->
+    <fieldset id="catalog-fieldset">
+        <legend>Índice de Tags</legend>
+        <ul id="catalog">
+            <li><a href="#doctype-html">&lt;!DOCTYPE HTML&gt;</a></li>
+            <li><a href="#head">&lt;head&gt;</a></li>
+            <li><a href="#body">&lt;body&gt;</a></li>
+            <li><a href="#h1">&lt;h1&gt;</a></li>
+            <li><a href="#style">&lt;style&gt;</a></li>
+            <li><a href="#p">&lt;p&gt;</a></li>
+            <li><a href="#br">&lt;br&gt;</a></li>
+            <li><a href="#button">&lt;button&gt;</a></li>
+            <li><a href="#form">&lt;form&gt;</a></li>
+            <li><a href="#iframe">&lt;iframe&gt;</a></li>
+            <li><a href="#img">&lt;img&gt;</a></li>
+            <li><a href="#ol">&lt;ol&gt;</a></li>
+            <li><a href="#ul">&lt;ul&gt;</a></li>
+            <li><a href="#table">&lt;table&gt;</a></li>
+            <li><a href="#caption">&lt;caption&gt;</a></li>
+            <li><a href="#tr">&lt;tr&gt;</a></li>
+            <li><a href="#th">&lt;th&gt;</a></li>
+        </ul>
+    </fieldset>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <!-- Agrupando explicações por categorias -->
+    <div class="tag-group">
+        <fieldset>
+            <legend>Metadados</legend>
+            <h2 id="doctype-html">&lt;!DOCTYPE HTML&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Declara o tipo de documento como HTML5 para o navegador.</p>
+            <p>Exemplo: &lt;!DOCTYPE HTML&gt;</p>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <h2 id="head">&lt;head&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Contém metadados e links de recursos do documento.</p>
+            <p>Exemplo: &lt;head&gt;&lt;title&gt;Título&lt;/title&gt;&lt;/head&gt;</p>
+        </fieldset>
+    </div>
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <div class="tag-group">
+        <fieldset>
+            <legend>Estrutura e Estilo</legend>
+            <h2 id="body">&lt;body&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Representa o corpo do documento, onde o conteúdo visível fica.</p>
+            <p>Exemplo: &lt;body&gt; ... &lt;/body&gt;</p>
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <h2 id="h1">&lt;h1&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Usada para título principal mais importante do documento.</p>
+            <p>Exemplo: &lt;h1&gt;Título&lt;/h1&gt;</p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+            <h2 id="style">&lt;style&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Permite adicionar CSS diretamente no documento.</p>
+            <p>Exemplo: &lt;style&gt;body { color: red; }&lt;/style&gt;</p>
+        </fieldset>
+    </div>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+    <div class="tag-group">
+        <fieldset>
+            <legend>Texto e Listas</legend>
+            <h2 id="p">&lt;p&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Define um parágrafo de texto.</p>
+            <p>Exemplo: &lt;p&gt;Texto aqui&lt;/p&gt;</p>
+
+            <h2 id="br">&lt;br&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Insere uma quebra de linha simples no texto.</p>
+            <p>Exemplo: Linha1&lt;br&gt;Linha2</p>
+
+            <h2 id="ol">&lt;ol&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Cria lista ordenada numerada.</p>
+            <p>Exemplo: &lt;ol&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;/ol&gt;</p>
+
+            <h2 id="ul">&lt;ul&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Cria lista não ordenada com marcadores.</p>
+            <p>Exemplo: &lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</p>
+        </fieldset>
+    </div>
+
+    <div class="tag-group">
+        <fieldset>
+            <legend>Formulários e Mídia</legend>
+            <h2 id="button">&lt;button&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Cria um botão interativo clicável.</p>
+            <p>Exemplo: &lt;button&gt;Clique aqui&lt;/button&gt;</p>
+
+            <h2 id="form">&lt;form&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Agrupa controles de entrada para envio de dados.</p>
+            <p>Exemplo: &lt;form action=\"/\" method=\"post\"&gt;...&lt;/form&gt;</p>
+
+            <h2 id="iframe">&lt;iframe&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Incorpora outro documento HTML dentro da página.</p>
+            <p>Exemplo: &lt;iframe src=\"pagina.html\"&gt;&lt;/iframe&gt;</p>
+
+            <h2 id="img">&lt;img&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Exibe uma imagem na página.</p>
+            <p>Exemplo: &lt;img src=\"foto.jpg\" alt=\"Descrição\"&gt;</p>
+        </fieldset>
+    </div>
+
+    <div class="tag-group">
+        <fieldset>
+            <legend>Tabelas</legend>
+            <h2 id="table">&lt;table&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Cria uma tabela de dados tabulares.</p>
+            <p>Exemplo: &lt;table&gt;...&lt;/table&gt;</p>
+
+            <h2 id="caption">&lt;caption&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Define a legenda de uma tabela.</p>
+            <p>Exemplo: &lt;caption&gt;Minha Tabela&lt;/caption&gt;</p>
+
+            <h2 id="tr">&lt;tr&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Representa uma linha dentro de uma tabela.</p>
+            <p>Exemplo: &lt;tr&gt;&lt;td&gt;Célula&lt;/td&gt;&lt;/tr&gt;</p>
+
+            <h2 id="th">&lt;th&gt;</h2>
+            <!-- Expliquei isso -->
+            <p>Define uma célula de cabeçalho de tabela.</p>
+            <p>Exemplo: &lt;th&gt;Cabeçalho&lt;/th&gt;</p>
+        </fieldset>
+    </div>
 
 </body>
 </html>
