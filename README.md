@@ -1,4 +1,4 @@
-# Trilha HTML - Dio.me
+<img width="1920" height="989" alt="image" src="https://github.com/user-attachments/assets/35b81f7a-a656-4f41-bc19-f0926b380a01" /># Trilha HTML - Dio.me
 ## Módulo 01 - Primeiros passos com HTML
 
 A ideia deste desafio é elaborar um website, utilizando uma estrutura bem básica, utilizando tags aprendidas durante as aulas práticas até então. 
@@ -14,3 +14,7 @@ Este desafio vai fazer com que tenha dúvidas, o que é ótimo! Aos poucos você
 Após concluído este desafio! Siga para o <strong>Módulo II - Conceitos Básicos.</strong>
 
 Nos vemos lá!
+
+Resultado:
+
+<img width="1920" height="989" alt="image" src="https://github.com/user-attachments/assets/7fca0454-3ddc-4ee4-b9e3-984366b51b9d" />
